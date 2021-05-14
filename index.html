@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Editor</title>
+    <script src="https://kit.fontawesome.com/ac69056d5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <p>Text Editor</p>
+    </div>
+    <div class="editor-container">
+        <div class="toolbar">
+            <a href="#" onclick="formatText('bold')" title="Bold"><i class="fas fa-bold fa-fw"></i></a>
+            <a href="#" onclick="formatText('italic')" title="Italic"><i class="fas fa-italic fa-fw"></i></a>
+            <a href="#" onclick="formatText('insertunorderedlist')" title="Bullet point"><i class="fas fa-list fa-fw"></i></a>
+            <label for="read" title="Load from file">
+                <i class="fas fa-folder-open"></i>
+            </label>
+            <input type="file" id="read"></input>
+            <label for="save" title="Save">
+                <i class="fas fa-save"></i>
+            </label>
+            <input id="save"></input>
+        </div>
+        <div class="editor" id="editor" contenteditable></div>
+    </div>
+</div>
+    <script src="app.js" defer></script>
+</body>
+</html>
